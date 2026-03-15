@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne Grady | Kinetic Clarity | Resilience Keynote</title>
+    <meta name="description"
+        content="Anne Grady provides robust resilience strategies to help organizations adapt and grow.">
+    <!-- Fontshare: Outfit for Headings, Satoshi for body -->
+    <link href="https://api.fontshare.com/v2/css?f[]=outfit@700,500,800&f[]=satoshi@400,500,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* PROTOTYPE 2 REVISIONS */
+        .kinetic-hero {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        /* Remove grid gap so we can manually size the full bleed right column */
+        @media (min-width: 901px) {
+            .hero-layout {
+                gap: 0 !important;
+            }
+
+            .hero-text-col {
+                max-width: calc(var(--grid-max) / 2);
+                margin-left: auto;
+                padding-right: 4rem;
+                /* Simulate the original gap */
+            }
+
+            .hero-visual-col {
+                width: 100%;
+                height: 100%;
+                /* Create the full-bleed layer */
+                position: relative;
+                min-height: 700px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                /* Background image properties */
+                background-image: url('reflectiveBG.png');
+                background-size: cover;
+                background-position: center;
+            }
+
+            /* The transparent portrait sits inside the full bleed background */
+            .hero-img {
+                width: auto !important;
+                height: 110%;
+                max-height: 800px;
+                object-fit: contain;
+                object-position: bottom center;
+                display: block;
+                position: relative;
+                right: 25% !important;
+                /* Optional: drop shadow to separate from background */
+                filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2)) contrast(1.05) !important;
+                /* Right to Left Animation */
+                opacity: 0;
+                transform: translateX(40px);
+                /* Start slightly to the right */
+                animation: fadeLeftTech 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.3s forwards;
+            }
+
+            @keyframes fadeLeftTech {
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            /* Remove the original boxed design constraints */
+            .image-frame {
+                border: none !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-kinetic">
+
+    <!-- Grid Overlay Concept for aesthetic -->
+    <div class="bg-grid-overlay"></div>
+
+    <nav class="kinetic-nav">
+        <div class="container container-wide nav-inner">
+            <a href="#" class="brand">
+                <img src="../../AGG Logos (Master)/AGG Logos (Master)/Logos AGG - Format PNG/AGG Logo - Black 1k Medium (1016 x 219).png"
+                    alt="Anne Grady Group Logo" class="brand-logo">
+            </a>
+            <div class="nav-links">
+                <a href="#topics" class="nav-link">Topics</a>
+                <a href="#books" class="nav-link">Books</a>
+                <a href="#contact" class="btn btn-primary sticky-cta-mobile">Check Availability</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="kinetic-hero">
+        <div class="container container-wide hero-layout">
+            <div class="hero-text-col fade-up">
+                <div class="status-badge">Fortune 100 Keynote Speaker</div>
+                <h1 class="hero-title">Adapt.<br><span class="text-accent">Accelerate.</span><br>Achieve.</h1>
+                <p class="hero-lead">Equipping high-performing teams with the psychological frameworks to turn systemic
+                    disruption into undeniable momentum.</p>
+                <div class="hero-cta-group">
+                    <button class="btn btn-primary btn-large cta-book">Book Anne <span
+                            class="arrow">&rarr;</span></button>
+                    <div class="proof-mini">
+                        <span class="stars">★★★★★</span>
+                        <span class="proof-text">Trusted by 100+ Global Brands</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual-col fade-up fade-delay-1">
+                <div class="image-frame">
+                    <!-- Layered transparent image on top of the CSS background -->
+                    <img src="../../2025 Headshots (Retouched)/2025 Headshots (Retouched)/Transparent shots/transparent4.png"
+                        alt="Anne Grady" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="ticker-trust">
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="ticker-item">Microsoft</span>
+                <span class="ticker-item">Google</span>
+                <span class="ticker-item">Johnson & Johnson</span>
+                <span class="ticker-item">General Mills</span>
+                <span class="ticker-item">ADP</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="ticker-item">Microsoft</span>
+                <span class="ticker-item">Google</span>
+                <span class="ticker-item">Johnson & Johnson</span>
+                <span class="ticker-item">General Mills</span>
+                <span class="ticker-item">ADP</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority / Proof -->
+    <section class="kinetic-authority" id="about">
+        <div class="container container-wide">
+            <div class="authority-grid">
+                <div class="stat-card fade-up">
+                    <span class="stat-number">3.0™</span>
+                    <span class="stat-label">Resilience Framework developed & deployed globally.</span>
+                </div>
+                <div class="quote-card fade-up fade-delay-1">
+                    <blockquote>"Anne engaged... with enthusiasm, kindness, and humility. She has a unique ability to
+                        gather data and say, 'This is what matters.'"</blockquote>
+                    <cite>— Executive Retreat Facilitation Client</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs mapped to exact Planner Needs -->
+    <section class="kinetic-programs" id="topics">
+        <div class="container container-wide">
+            <div class="programs-header fade-up">
+                <h2 class="section-heading">Keynote Architectures</h2>
+                <a href="#contact" class="btn btn-outline">Download Media Kit</a>
+            </div>
+
+            <div class="program-list">
+                <div class="program-row fade-up">
+                    <div class="prg-number">01</div>
+                    <div class="prg-content">
+                        <h3>Resilience Reset Deep Dive</h3>
+                        <p><strong>The Outcome:</strong> Managers leave equipped to stabilize their teams during rapid
+                            shifts and uncertainty, minimizing burnout.</p>
+                    </div>
+                    <div class="prg-action"><button class="btn btn-icon">→</button></div>
+                </div>
+                <div class="program-row fade-up fade-delay-1">
+                    <div class="prg-number">02</div>
+                    <div class="prg-content">
+                        <h3>Mind Over Moment</h3>
+                        <p><strong>The Outcome:</strong> Audiences shift from reactive anxiety to proactive focus,
+                            walking away with 3 daily habits to command their attention.</p>
+                    </div>
+                    <div class="prg-action"><button class="btn btn-icon">→</button></div>
+                </div>
+                <div class="program-row fade-up fade-delay-2">
+                    <div class="prg-number">03</div>
+                    <div class="prg-content">
+                        <h3>EvolvAbility</h3>
+                        <p><strong>The Outcome:</strong> Next-gen leaders learn agile decision-making frameworks to
+                            maintain cross-team cohesion regardless of external pressures.</p>
+                    </div>
+                    <div class="prg-action"><button class="btn btn-icon">→</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books -->
+    <section class="kinetic-books" id="books">
+        <div class="container container-wide">
+            <div class="books-wrapper fade-up">
+                <div class="books-text">
+                    <h2 class="section-heading">Sustain the Momentum</h2>
+                    <p>Bulk copies of <em>EvolvAbility</em> and <em>52 Strategies</em> ensure the keynote methodologies
+                        become company culture.</p>
+                </div>
+                <div class="books-image-stack">
+                    <img src="../../Book Covers/Book Covers/Book Covers 0 - All Large/Book Covers - EvolvAbility FLAT Large (1800x2700).png"
+                        alt="EvolvAbility Flat" class="book-flat">
+                    <img src="../../Book Covers/Book Covers/Book Covers 1 - 52 Strategies/Book Cover - 52 Strategies Flat (1800 x 2700).webp"
+                        alt="52 Strategies Flat" class="book-flat hover-tilt">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="kinetic-cta text-center fade-up" id="contact">
+        <div class="container">
+            <h2 class="section-heading giant">Ready? Let's Build.</h2>
+            <div class="input-group">
+                <input type="email" placeholder="Enter your email to check dates..." />
+                <button class="btn btn-primary">Start</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

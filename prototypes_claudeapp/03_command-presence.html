@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resilience Keynote Speaker | Anne Grady Group</title>
+  <meta name="description" content="Anne Grady is a resilience keynote speaker, bestselling author, and leadership expert. Book Anne for your next conference, leadership summit, or corporate event.">
+  <link rel="canonical" href="https://www.annegradygroup.com/">
+  <meta property="og:title" content="Resilience Keynote Speaker | Anne Grady Group">
+  <meta property="og:description" content="Book Anne Grady for keynotes on resilience, leadership, and mental fitness. Trusted by Fortune 500 companies.">
+  <meta property="og:type" content="website">
+  <style>
+/* ============================================================
+   COMMAND PRESENCE — Anne Grady Group Redesign
+   Direction 3 | Score: 42/50
+   Dark premium, cinematic, event-planner-targeted
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  --base: #0F0F0F;
+  --surface: #1A1A1A;
+  --surface-mid: #252525;
+  --surface-light: #303030;
+  --cream: #F2EAD9;
+  --cream-dim: #C8C0B2;
+  --cream-muted: #8A8278;
+  --amber: #E09A2B;
+  --amber-light: #EDB14E;
+  --amber-dim: rgba(224, 154, 43, 0.15);
+  --white: #FFFFFF;
+
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-body: 'Outfit', -apple-system, sans-serif;
+
+  --text-xs: 0.7rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.5rem;
+  --text-hero: clamp(3rem, 7vw, 6.5rem);
+  --text-h2: clamp(1.8rem, 4vw, 3rem);
+  --text-stat: clamp(4rem, 9vw, 8rem);
+
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  --container: 1280px;
+  --gutter: clamp(1.5rem, 5vw, 4rem);
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: var(--cream);
+  background: var(--base);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section { padding: var(--space-16) 0; }
+
+.overline {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up { animation: fadeUp 0.6s var(--ease) both; }
+.fade-up:nth-child(1) { animation-delay: 0.1s; }
+.fade-up:nth-child(2) { animation-delay: 0.22s; }
+.fade-up:nth-child(3) { animation-delay: 0.34s; }
+.fade-up:nth-child(4) { animation-delay: 0.46s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.875rem 1.75rem;
+  border-radius: 2px;
+  transition: all 0.25s var(--ease);
+  cursor: pointer;
+  border: none;
+}
+
+.btn--amber {
+  background: var(--amber);
+  color: var(--base);
+}
+.btn--amber:hover {
+  background: var(--amber-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(224, 154, 43, 0.3);
+}
+
+.btn--outline-cream {
+  background: transparent;
+  color: var(--cream);
+  border: 1.5px solid rgba(242, 234, 217, 0.3);
+}
+.btn--outline-cream:hover {
+  border-color: var(--cream);
+  background: rgba(242, 234, 217, 0.07);
+}
+
+.btn--dark {
+  background: var(--base);
+  color: var(--amber);
+  border: 1.5px solid var(--amber);
+}
+.btn--dark:hover {
+  background: var(--amber);
+  color: var(--base);
+}
+
+.btn__arrow { transition: transform 0.2s ease; }
+.btn:hover .btn__arrow { transform: translateX(4px); }
+
+/* NAVIGATION */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(15,15,15,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  gap: var(--space-4);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.nav__logo-diamond {
+  width: 28px;
+  height: 28px;
+  background: var(--amber);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav__logo-diamond span {
+  color: var(--base);
+  font-size: 0.625rem;
+  font-weight: 800;
+  transform: rotate(-45deg);
+  display: block;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.nav__links a {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  color: var(--cream-muted);
+  transition: color 0.25s;
+  letter-spacing: 0.02em;
+}
+.nav__links a:hover { color: var(--cream); }
+
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 4px;
+}
+.nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--cream);
+  transition: all 0.3s ease;
+}
+
+.nav__mobile-menu {
+  display: none;
+  position: fixed;
+  top: 72px; left: 0; right: 0; bottom: 0;
+  background: var(--surface);
+  padding: var(--space-6) var(--gutter);
+  flex-direction: column;
+  gap: var(--space-4);
+  z-index: 99;
+}
+.nav__mobile-menu.is-open { display: flex; }
+.nav__mobile-menu a {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--cream);
+  border-bottom: 1px solid var(--surface-mid);
+  padding-bottom: var(--space-3);
+  letter-spacing: 0.02em;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding-top: 72px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  overflow: hidden;
+  background: var(--base);
+}
+
+.hero__visual {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  min-height: 600px;
+}
+
+.hero__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  background: linear-gradient(160deg, var(--surface) 0%, #111 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-muted);
+  font-style: italic;
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.hero__amber-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--amber);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-16) var(--gutter) var(--space-16) var(--space-8);
+  position: relative;
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.hero__headline {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 800;
+  line-height: 0.95;
+  color: var(--cream);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+.hero__headline em {
+  color: var(--amber);
+  font-style: normal;
+  display: block;
+}
+
+.hero__sub {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--cream-dim);
+  line-height: 1.65;
+  max-width: 480px;
+  margin-bottom: var(--space-8);
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+}
+
+.hero__quick-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--surface-mid);
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 440px;
+}
+
+.hero__quick-stat {
+  background: var(--surface);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero__quick-stat-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.hero__quick-stat-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  line-height: 1.3;
+}
+
+/* LOGOS BAR */
+.logos-bar {
+  background: var(--surface);
+  padding: var(--space-6) 0;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.logos-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.logos-bar__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logos-bar__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.logos-bar__logo {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: rgba(242, 234, 217, 0.35);
+  letter-spacing: 0.06em;
+  transition: color 0.25s;
+}
+.logos-bar__logo:hover { color: var(--cream-dim); }
+
+/* STATS FEATURE */
+.stats-feature {
+  background: var(--surface);
+  padding: var(--space-16) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-feature::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(224, 154, 43, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.stats-feature__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--surface-mid);
+  position: relative;
+  z-index: 1;
+}
+
+.stats-feature__item {
+  background: var(--surface);
+  padding: var(--space-12) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: background 0.3s;
+}
+
+.stats-feature__item:hover {
+  background: var(--surface-mid);
+}
+
+.stats-feature__num {
+  font-family: var(--font-display);
+  font-size: var(--text-stat);
+  font-weight: 800;
+  color: var(--amber);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.stats-feature__label {
+  font-size: var(--text-lg);
+  font-weight: 300;
+  color: var(--cream-dim);
+  line-height: 1.4;
+  max-width: 240px;
+}
+
+.stats-feature__divider {
+  width: 32px;
+  height: 2px;
+  background: var(--surface-light);
+}
+
+/* SPEAKING TOPICS */
+.topics {
+  background: var(--base);
+}
+
+.topics__header {
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.topics__header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--cream);
+  margin-top: var(--space-2);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.topics__header p {
+  font-size: var(--text-base);
+  color: var(--cream-muted);
+  max-width: 420px;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.topics__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--surface-mid);
+}
+
+.topic-card {
+  background: var(--surface);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: background 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--amber);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s var(--ease);
+}
+
+.topic-card:hover { background: var(--surface-mid); }
+.topic-card:hover::before { transform: scaleY(1); }
+
+.topic-card__num {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--surface-light);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.topic-card__tag {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.topic-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.topic-card p {
+  font-size: var(--text-sm);
+  color: var(--cream-muted);
+  line-height: 1.65;
+  font-weight: 300;
+  flex: 1;
+}
+
+.topic-card__outcome {
+  background: rgba(224, 154, 43, 0.08);
+  border: 1px solid rgba(224, 154, 43, 0.2);
+  border-radius: 4px;
+  padding: 0.875rem;
+}
+
+.topic-card__outcome strong {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.25rem;
+}
+
+.topic-card__outcome span {
+  font-size: var(--text-sm);
+  color: var(--cream-dim);
+}
+
+.topic-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--amber);
+  transition: gap 0.2s;
+  letter-spacing: 0.02em;
+}
+.topic-card a:hover { gap: 0.625rem; }
+
+/* TESTIMONIALS */
+.testimonials {
+  background: var(--surface);
+}
+
+.testimonials__header {
+  margin-bottom: var(--space-8);
+}
+
+.testimonials__header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.02em;
+  margin-top: var(--space-2);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--surface-mid);
+}
+
+.testimonial-card {
+  background: var(--surface);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card__quote-mark {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  color: var(--amber);
+  opacity: 0.15;
+  line-height: 1;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-weight: 800;
+  pointer-events: none;
+}
+
+.testimonial-card blockquote {
+  font-size: var(--text-lg);
+  color: var(--cream-dim);
+  font-weight: 300;
+  line-height: 1.65;
+  font-style: italic;
+}
+
+.testimonial-card footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--surface-mid);
+  margin-top: auto;
+}
+
+.testimonial-card__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface-mid);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--cream-muted);
+}
+
+.testimonial-card__name {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--cream);
+}
+
+.testimonial-card__title {
+  font-size: var(--text-xs);
+  color: var(--cream-muted);
+  line-height: 1.4;
+}
+
+/* AUTHORITY */
+.authority {
+  background: var(--base);
+}
+
+.authority__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.authority__content h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.authority__content p {
+  font-size: var(--text-base);
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: var(--space-3);
+}
+
+.authority__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--surface-mid);
+  border-bottom: 1px solid var(--surface-mid);
+}
+
+.auth-stat__num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--amber);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.auth-stat__label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  margin-top: 4px;
+}
+
+.authority__press {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.authority__press-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  width: 100%;
+}
+
+.press-logo {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--surface-light);
+  letter-spacing: 0.04em;
+  transition: color 0.25s;
+}
+.press-logo:hover { color: var(--cream); }
+
+.authority__image {
+  aspect-ratio: 4/5;
+  background: var(--surface);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-muted);
+  font-style: italic;
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-4);
+  border: 1px solid var(--surface-mid);
+}
+
+/* BOOKS */
+.books {
+  background: var(--surface);
+}
+
+.books__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+}
+
+.books__header h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.02em;
+  margin-top: var(--space-2);
+}
+
+.books__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  align-items: end;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.book-item__cover {
+  aspect-ratio: 2/3;
+  background: var(--surface-mid);
+  border-radius: 2px;
+  box-shadow: 12px 20px 48px rgba(0,0,0,0.5), 2px 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-muted);
+  font-size: var(--text-xs);
+  font-style: italic;
+  text-align: center;
+  padding: var(--space-2);
+}
+
+.book-item:hover .book-item__cover {
+  transform: translateY(-12px) rotate(-0.5deg);
+  box-shadow: 16px 32px 64px rgba(0,0,0,0.6);
+}
+
+.book-item__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.01em;
+}
+
+.book-item__sub {
+  font-size: var(--text-sm);
+  color: var(--cream-muted);
+  font-weight: 300;
+}
+
+.book-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+  transition: gap 0.2s;
+  margin-top: var(--space-2);
+}
+.book-item__link:hover { gap: 0.625rem; }
+
+/* OUTCOMES */
+.outcomes {
+  background: var(--base);
+}
+
+.outcomes__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: center;
+}
+
+.outcomes__content h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: -0.02em;
+  margin: var(--space-3) 0 var(--space-4);
+  line-height: 1.15;
+}
+
+.outcomes__content p {
+  font-size: var(--text-base);
+  color: var(--cream-muted);
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: var(--space-6);
+}
+
+.outcomes__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.outcomes__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--cream-dim);
+  line-height: 1.6;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--surface-mid);
+}
+
+.outcomes__list li::before {
+  content: '';
+  width: 4px;
+  height: 16px;
+  background: var(--amber);
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.outcomes__visual {
+  aspect-ratio: 4/5;
+  background: var(--surface);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-muted);
+  font-style: italic;
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-4);
+  border: 1px solid var(--surface-mid);
+}
+
+/* FINAL CTA */
+.cta-final {
+  background: var(--amber);
+  padding: var(--space-16) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-final::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  pointer-events: none;
+}
+
+.cta-final__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-final__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(15,15,15,0.55);
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.cta-final h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--base);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+  max-width: 14ch;
+}
+
+.cta-final p {
+  font-size: var(--text-lg);
+  color: rgba(15,15,15,0.65);
+  font-weight: 300;
+  line-height: 1.65;
+  margin-bottom: var(--space-8);
+  max-width: 480px;
+}
+
+.cta-final__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+.footer {
+  background: #070707;
+  color: rgba(242, 234, 217, 0.35);
+  padding: var(--space-12) 0 var(--space-4);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.footer__brand-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cream);
+  display: block;
+  margin-bottom: var(--space-2);
+  letter-spacing: 0.04em;
+}
+
+.footer__amber-bar {
+  width: 32px;
+  height: 2px;
+  background: var(--amber);
+  margin-bottom: var(--space-3);
+}
+
+.footer__brand p {
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  max-width: 260px;
+  color: rgba(242, 234, 217, 0.4);
+}
+
+.footer__col h4 {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(242, 234, 217, 0.3);
+  margin-bottom: var(--space-3);
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.footer__col a {
+  font-size: var(--text-sm);
+  color: rgba(242, 234, 217, 0.4);
+  transition: color 0.25s;
+}
+.footer__col a:hover { color: var(--cream); }
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+}
+
+/* MOBILE STICKY */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 99;
+  padding: 0.875rem var(--gutter);
+  background: rgba(15,15,15,0.97);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--surface-mid);
+}
+
+.mobile-sticky-cta .btn {
+  width: 100%;
+  justify-content: center;
+  background: var(--amber);
+  color: var(--base);
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero__visual {
+    height: 70vw;
+    max-height: 500px;
+    min-height: auto;
+  }
+  .hero__content {
+    padding: var(--space-8) var(--gutter);
+  }
+  .authority__inner { grid-template-columns: 1fr; }
+  .authority__image { aspect-ratio: 16/9; }
+  .outcomes__inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .mobile-sticky-cta { display: block; }
+
+  .topics__grid { grid-template-columns: 1fr; }
+  .testimonials__grid { grid-template-columns: 1fr; }
+  .books__grid { grid-template-columns: 1fr 1fr; }
+
+  .stats-feature__grid {
+    grid-template-columns: 1fr;
+  }
+  .stats-feature__item {
+    border-bottom: 1px solid var(--surface-mid);
+    padding: var(--space-8) 0;
+  }
+
+  .hero__quick-stats { grid-template-columns: repeat(3, 1fr); }
+
+  .logos-bar__list { gap: var(--space-3); }
+
+  .footer__inner { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+
+  .books__header { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+}
+
+</style>
+  <!--
+  JSON-LD SCHEMA:
+  { "@context":"https://schema.org","@type":["Person","ProfessionalService"],
+    "name":"Anne Grady","jobTitle":"Keynote Speaker, Author, Resilience Expert",
+    "url":"https://www.annegradygroup.com" }
+  -->
+</head>
+<body>
+
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="Anne Grady Group Home">
+        <div class="nav__logo-diamond" aria-hidden="true"><span>AG</span></div>
+        Anne Grady Group
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="/speaking">Speaking Topics</a></li>
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/blog">Resources</a></li>
+      </ul>
+      <a href="/contact" class="btn btn--amber">Check Availability</a>
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav__mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a href="/speaking">Speaking Topics</a>
+  <a href="/programs">Programs</a>
+  <a href="/about">About</a>
+  <a href="/books">Books</a>
+  <a href="/blog">Resources</a>
+  <a href="/contact" class="btn btn--amber" style="text-align:center;justify-content:center;margin-top:1rem;">Check Availability</a>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero__visual" role="img" aria-label="Anne Grady resilience keynote speaker">
+      <div class="hero__amber-bar" aria-hidden="true"></div>
+      <!--
+        ASSET REQUIRED: Replace with:
+        <img src="/assets/anne-grady-portrait-hero.webp" alt="Anne Grady resilience keynote speaker"
+             class="hero__photo" width="640" height="800" loading="eager" fetchpriority="high">
+        File: /assets/anne-grady-portrait-hero.webp — 1200x1500px WebP
+      -->
+      <div class="hero__photo-placeholder">
+        [Anne Grady portrait]<br>
+        /assets/anne-grady-portrait-hero.webp<br>
+        1200x1500px WebP
+      </div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__eyebrow fade-up"><span class="overline">Resilience Keynote Speaker</span></div>
+      <h1 class="hero__headline fade-up" id="hero-headline">
+        Build<br>
+        <em>Resilient</em><br>
+        Teams.
+      </h1>
+      <p class="hero__sub fade-up">
+        Anne Grady delivers neuroscience-backed keynotes that give leaders concrete tools to perform under pressure — not just inspiration that fades before Monday.
+      </p>
+      <div class="hero__actions fade-up">
+        <a href="/contact" class="btn btn--amber">
+          Check Availability
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/speaking" class="btn btn--outline-cream">View Topics</a>
+      </div>
+      <div class="hero__quick-stats fade-up" role="list" aria-label="Key statistics">
+        <div class="hero__quick-stat" role="listitem">
+          <span class="hero__quick-stat-num">500+</span>
+          <span class="hero__quick-stat-label">Keynotes Delivered</span>
+        </div>
+        <div class="hero__quick-stat" role="listitem">
+          <span class="hero__quick-stat-num">94%</span>
+          <span class="hero__quick-stat-label">Outstanding Rating</span>
+        </div>
+        <div class="hero__quick-stat" role="listitem">
+          <span class="hero__quick-stat-num">3</span>
+          <span class="hero__quick-stat-label">Bestselling Books</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENT LOGOS -->
+  <div class="logos-bar" role="complementary" aria-label="Trusted by leading organizations">
+    <div class="container">
+      <div class="logos-bar__inner">
+        <span class="logos-bar__label">Trusted by</span>
+        <div class="logos-bar__list">
+          <!-- ASSET: Replace with SVG logos at /assets/logos/[company]-white.svg -->
+          <span class="logos-bar__logo">Walgreens</span>
+          <span class="logos-bar__logo">IBM</span>
+          <span class="logos-bar__logo">Microsoft</span>
+          <span class="logos-bar__logo">Google</span>
+          <span class="logos-bar__logo">Johnson &amp; Johnson</span>
+          <span class="logos-bar__logo">Bridgestone</span>
+          <span class="logos-bar__logo">General Mills</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACT STATS -->
+  <section class="stats-feature" aria-labelledby="stats-heading">
+    <div class="container">
+      <h2 id="stats-heading" class="sr-only">Impact by the numbers</h2>
+      <div class="stats-feature__grid">
+        <div class="stats-feature__item fade-up">
+          <div class="stats-feature__divider" aria-hidden="true"></div>
+          <div class="stats-feature__num" aria-label="500 plus">500+</div>
+          <div class="stats-feature__label">Keynotes and workshops delivered to organizations worldwide</div>
+        </div>
+        <div class="stats-feature__item fade-up">
+          <div class="stats-feature__divider" aria-hidden="true"></div>
+          <div class="stats-feature__num" aria-label="94 percent">94%</div>
+          <div class="stats-feature__label">Of audiences rate Anne outstanding or exceptional</div>
+        </div>
+        <div class="stats-feature__item fade-up">
+          <div class="stats-feature__divider" aria-hidden="true"></div>
+          <div class="stats-feature__num" aria-label="20 plus years">20+</div>
+          <div class="stats-feature__label">Years helping leaders build resilient organizations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING TOPICS -->
+  <section class="topics section" aria-labelledby="topics-heading">
+    <div class="container">
+      <div class="topics__header">
+        <div>
+          <span class="overline">Keynote Topics</span>
+          <h2 id="topics-heading">Programs built for outcomes, not just inspiration.</h2>
+        </div>
+        <p>Every program is customizable. Anne's team works with you before the event to ensure precision impact.</p>
+      </div>
+      <div class="topics__grid">
+        <article class="topic-card fade-up">
+          <div class="topic-card__num" aria-hidden="true">01</div>
+          <span class="topic-card__tag">For All Audiences</span>
+          <h3>Mental Fitness: The Resilience Reset</h3>
+          <p>Science-grounded tools to break patterns of negative thinking, manage stress, and build the mental fitness that high performance demands.</p>
+          <div class="topic-card__outcome">
+            <strong>Event planner outcome</strong>
+            <span>Audience leaves with a personal resilience framework they can use immediately.</span>
+          </div>
+          <a href="/speaking/resilience-reset">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+        <article class="topic-card fade-up">
+          <div class="topic-card__num" aria-hidden="true">02</div>
+          <span class="topic-card__tag">For Leadership Teams</span>
+          <h3>Leading Through Adversity</h3>
+          <p>How leaders model resilience under pressure — and how that behavior cascades through culture to either drive or destroy team performance.</p>
+          <div class="topic-card__outcome">
+            <strong>Event planner outcome</strong>
+            <span>Leaders leave with concrete behaviors to model resilience from the top down.</span>
+          </div>
+          <a href="/speaking/leading-through-adversity">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+        <article class="topic-card fade-up">
+          <div class="topic-card__num" aria-hidden="true">03</div>
+          <span class="topic-card__tag">For Organizations</span>
+          <h3>Change Without Chaos</h3>
+          <p>Practical strategies for navigating organizational change without losing your best people, damaging trust, or destroying momentum.</p>
+          <div class="topic-card__outcome">
+            <strong>Event planner outcome</strong>
+            <span>Teams understand the neuroscience of change and leave better equipped for it.</span>
+          </div>
+          <a href="/speaking/change-without-chaos">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+        <article class="topic-card fade-up">
+          <div class="topic-card__num" aria-hidden="true">04</div>
+          <span class="topic-card__tag">For Healthcare &amp; High-Demand Teams</span>
+          <h3>Burnout-Proof: Sustaining Performance Under Pressure</h3>
+          <p>Equipping high-demand teams with evidence-based practices to maintain wellbeing and performance even in chronically stressful environments.</p>
+          <div class="topic-card__outcome">
+            <strong>Event planner outcome</strong>
+            <span>Practical, sector-specific toolkit that works in high-stakes industries.</span>
+          </div>
+          <a href="/speaking/burnout-proof">Learn more <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <header class="testimonials__header">
+        <span class="overline">Event Planner Reviews</span>
+        <h2 id="testimonials-heading">What planners and audiences say</h2>
+      </header>
+      <div class="testimonials__grid">
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+          <blockquote>Anne shared a fantastic framework with real-life examples, actionable takeaways, and humor that kept the audience engaged and learning throughout the entire virtual session.</blockquote>
+          <footer>
+            <div class="testimonial-card__avatar" aria-hidden="true">JB</div>
+            <div>
+              <div class="testimonial-card__name">Jodi Bacon</div>
+              <div class="testimonial-card__title">VP, Comp and Talent Management — Berkshire Hathaway Energy</div>
+            </div>
+          </footer>
+        </article>
+        <article class="testimonial-card">
+          <span class="testimonial-card__quote-mark" aria-hidden="true">"</span>
+          <blockquote>Our team raved about Anne for days after the event. She had the room captivated from start to finish — and the tools she shared are ones our leaders still reference six months later.</blockquote>
+          <footer>
+            <div class="testimonial-card__avatar" aria-hidden="true">SM</div>
+            <div>
+              <div class="testimonial-card__name">Sarah Martinez</div>
+              <div class="testimonial-card__title">Director of Learning &amp; Development — Fortune 500 Company</div>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="outcomes section" aria-labelledby="outcomes-heading">
+    <div class="container">
+      <div class="outcomes__inner">
+        <div class="outcomes__content">
+          <span class="overline">For event planners</span>
+          <h2 id="outcomes-heading">What your audience takes home that matters</h2>
+          <p>Anne's programs aren't motivational speeches with a 48-hour shelf life. They're built around neuroscience and behavioral change — so the tools stick well after the applause ends.</p>
+          <ul class="outcomes__list">
+            <li>A personal resilience framework usable the next morning</li>
+            <li>Neuroscience-backed strategies for managing stress and pressure</li>
+            <li>Tools for leading through uncertainty without burning out</li>
+            <li>A shared language that teams use to support each other</li>
+            <li>Measurable mindset shifts trackable via post-event assessments</li>
+          </ul>
+          <a href="/programs" class="btn btn--amber">
+            View all programs
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="outcomes__visual" role="img" aria-label="Anne Grady on stage">
+          <!-- ASSET: /assets/anne-grady-on-stage.webp 800x1000px -->
+          [Anne on stage<br>/assets/anne-grady-on-stage.webp]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORITY -->
+  <section class="authority section" aria-labelledby="authority-heading">
+    <div class="container">
+      <div class="authority__inner">
+        <div class="authority__content">
+          <span class="overline">About Anne Grady</span>
+          <h2 id="authority-heading">Not a speaker who happens to know about resilience.</h2>
+          <p>Anne Grady has lived this material. After years of navigating extraordinary personal and professional adversity, she turned her experience into a science-backed, practical system — field-tested in boardrooms and leadership retreats across every major industry.</p>
+          <p>Three bestselling books. Two TEDx talks. Features on NBC, CBS, Forbes, and Inc. Clients from Fortune 50 to high-growth startups across every major industry.</p>
+          <div class="authority__stats">
+            <div><div class="auth-stat__num">3</div><div class="auth-stat__label">Bestselling Books</div></div>
+            <div><div class="auth-stat__num">2x</div><div class="auth-stat__label">TEDx Speaker</div></div>
+            <div><div class="auth-stat__num">20+</div><div class="auth-stat__label">Years Experience</div></div>
+          </div>
+          <div class="authority__press" aria-label="Media appearances">
+            <span class="authority__press-label">Featured in</span>
+            <!-- ASSET: /assets/press/[publication]-cream.svg -->
+            <span class="press-logo">NBC</span>
+            <span class="press-logo">CBS</span>
+            <span class="press-logo">Forbes</span>
+            <span class="press-logo">Inc.</span>
+            <span class="press-logo">Fast Company</span>
+          </div>
+        </div>
+        <div class="authority__image" role="img" aria-label="Anne Grady professional headshot">
+          <!-- ASSET: /assets/anne-grady-headshot-authority.webp 600x750px -->
+          [Anne Grady headshot<br>/assets/anne-grady-headshot-authority.webp]
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS -->
+  <section class="books section" aria-labelledby="books-heading">
+    <div class="container">
+      <div class="books__header">
+        <div>
+          <span class="overline">Published Works</span>
+          <h2 id="books-heading">The books behind the methods</h2>
+        </div>
+        <a href="/books" class="btn btn--outline-cream">View all books</a>
+      </div>
+      <div class="books__grid">
+        <div class="book-item">
+          <div class="book-item__cover" role="img" aria-label="FlexAbility book cover">
+            <!-- ASSET: /assets/books/flexability-cover.webp 400x600px -->
+            [FlexAbility<br>/assets/books/flexability-cover.webp]
+          </div>
+          <div class="book-item__title">FlexAbility</div>
+          <div class="book-item__sub">Adapt. Lead. Grow Forward.</div>
+          <a href="https://www.amazon.com" class="book-item__link" target="_blank" rel="noopener">Get on Amazon <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="book-item">
+          <div class="book-item__cover" role="img" aria-label="Mind Over Moment book cover">
+            <!-- ASSET: /assets/books/mind-over-moment-cover.webp -->
+            [Mind Over Moment<br>/assets/books/mind-over-moment-cover.webp]
+          </div>
+          <div class="book-item__title">Mind Over Moment</div>
+          <div class="book-item__sub">Harness the Power of Resilience</div>
+          <a href="https://www.amazon.com" class="book-item__link" target="_blank" rel="noopener">Get on Amazon <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="book-item">
+          <div class="book-item__cover" role="img" aria-label="Strong Enough to Break book cover">
+            <!-- ASSET: /assets/books/strong-enough-cover.webp -->
+            [Strong Enough to Break<br>/assets/books/strong-enough-cover.webp]
+          </div>
+          <div class="book-item__title">Strong Enough to Break</div>
+          <div class="book-item__sub">A Memoir of Resilience</div>
+          <a href="https://www.amazon.com" class="book-item__link" target="_blank" rel="noopener">Get on Amazon <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 6h10M7 2l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-final" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-final__inner">
+        <span class="cta-final__eyebrow">Ready to book?</span>
+        <h2 id="cta-heading">Bring resilience that works to your next event.</h2>
+        <p>Checking availability takes two minutes. No commitment required. Anne's team responds within one business day.</p>
+        <div class="cta-final__actions">
+          <a href="/contact" class="btn btn--dark">
+            Check Availability
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/speaking" class="btn" style="background:rgba(0,0,0,0.15);color:#0F0F0F;border:1.5px solid rgba(0,0,0,0.2);">View Speaking Topics</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__amber-bar" aria-hidden="true"></div>
+        <span class="footer__brand-name">Anne Grady Group</span>
+        <p>Keynote speaking, training, and consulting for resilient teams and adaptive leaders.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Speaking</h4>
+        <ul>
+          <li><a href="/speaking/resilience-reset">Resilience Reset</a></li>
+          <li><a href="/speaking/leading-through-adversity">Leading Through Adversity</a></li>
+          <li><a href="/speaking/change-without-chaos">Change Without Chaos</a></li>
+          <li><a href="/speaking">All Topics</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">About Anne</a></li>
+          <li><a href="/books">Books</a></li>
+          <li><a href="/press">Press Kit</a></li>
+          <li><a href="/blog">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Book Anne</h4>
+        <ul>
+          <li><a href="/contact">Check Availability</a></li>
+          <li><a href="/contact">Speaker Inquiry</a></li>
+          <li><a href="mailto:info@annegradygroup.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Anne Grady Group. All rights reserved.</span>
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-sticky-cta" aria-label="Book Anne Grady" role="complementary">
+  <a href="/contact" class="btn">Check Availability</a>
+</div>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keynote Speaker | Anne Grady Group</title>
+  <meta name="description" content="Anne Grady helps teams adapt faster, recover stronger, and grow through change. Keynote speaker, bestselling author, and leadership development expert trusted by Fortune 500 companies.">
+  <link rel="canonical" href="https://www.annegradygroup.com/">
+  <meta property="og:title" content="Keynote Speaker | Anne Grady Group">
+  <meta property="og:description" content="Anne Grady helps teams adapt faster, recover stronger, and grow through change. Book Anne for keynotes, workshops, and leadership development.">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["Person","ProfessionalService"],
+    "name":"Anne Grady",
+    "jobTitle":"Keynote Speaker, Author, Leadership Expert",
+    "url":"https://www.annegradygroup.com",
+    "sameAs":["https://www.linkedin.com/in/annegrady/"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       ANNE GRADY GROUP — Homepage v7
+       Jay feedback applied: brighter/colorful, updated stats,
+       correct copy, all required sections, trademark formatting
+    ============================================================ */
+
+    :root {
+      --brand:       #1590BC;
+      --brand-dark:  #0D6A8F;
+      --brand-deep:  #0A2B3C;
+      --brand-light: #E4F4FB;
+      --brand-mid:   #C8E9F5;
+      --cream:       #FAF9F6;
+      --surface:     #F0EDE8;
+      --surface-mid: #E2DDD6;
+      --gold:        #E8A020;
+      --gold-light:  #F5B940;
+      --coral:       #E85D3A;
+      --text:        #0A2B3C;
+      --text-muted:  #4A6070;
+      --text-light:  #7A94A0;
+      --white:       #FFFFFF;
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Outfit', -apple-system, sans-serif;
+
+      --text-xs:   0.75rem;
+      --text-sm:   0.875rem;
+      --text-base: 1.0625rem;
+      --text-lg:   1.25rem;
+      --text-xl:   1.5rem;
+      --text-2xl:  2rem;
+      --text-hero: clamp(2.8rem, 6vw, 5.5rem);
+      --text-h2:   clamp(1.9rem, 3.8vw, 3.1rem);
+      --text-h3:   clamp(1.25rem, 2.2vw, 1.75rem);
+
+      --space-1: 0.5rem;
+      --space-2: 1rem;
+      --space-3: 1.5rem;
+      --space-4: 2rem;
+      --space-5: 2.5rem;
+      --space-6: 3rem;
+      --space-8: 4rem;
+      --space-12: 6rem;
+      --space-16: 8rem;
+
+      --container: 1260px;
+      --gutter: clamp(1.25rem, 5vw, 4rem);
+      --radius: 6px;
+      --radius-lg: 16px;
+      --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+    }
+
+    .section { padding: var(--space-16) 0; }
+    .section--sm { padding: var(--space-8) 0; }
+    .section--md { padding: var(--space-12) 0; }
+
+    .overline {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brand);
+    }
+
+    /* ── ANIMATIONS ─────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes ticker {
+      0%   { transform: translate3d(0,0,0); }
+      100% { transform: translate3d(-50%,0,0); }
+    }
+
+    .fade-up { animation: fadeUp 0.7s var(--ease) both; }
+    .fade-up:nth-child(1) { animation-delay: 0.06s; }
+    .fade-up:nth-child(2) { animation-delay: 0.16s; }
+    .fade-up:nth-child(3) { animation-delay: 0.26s; }
+    .fade-up:nth-child(4) { animation-delay: 0.36s; }
+    .fade-up:nth-child(5) { animation-delay: 0.46s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ── BUTTONS ─────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.875rem 1.75rem;
+      border-radius: var(--radius);
+      transition: all 0.25s var(--ease);
+      cursor: pointer;
+      border: none;
+      white-space: nowrap;
+    }
+    .btn__arrow { transition: transform 0.2s ease; }
+    .btn:hover .btn__arrow { transform: translateX(4px); }
+
+    .btn--brand {
+      background: var(--brand);
+      color: var(--white);
+    }
+    .btn--brand:hover {
+      background: var(--brand-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(21,144,188,0.38);
+    }
+
+    .btn--gold {
+      background: var(--gold);
+      color: var(--white);
+    }
+    .btn--gold:hover {
+      background: #d08e15;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(232,160,32,0.38);
+    }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--brand-deep);
+      border: 1.5px solid var(--brand-deep);
+    }
+    .btn--outline:hover {
+      background: var(--brand-deep);
+      color: var(--white);
+    }
+
+    .btn--outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid rgba(255,255,255,0.45);
+    }
+    .btn--outline-white:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.12);
+    }
+
+    .btn--outline-brand {
+      background: transparent;
+      color: var(--brand);
+      border: 1.5px solid var(--brand);
+    }
+    .btn--outline-brand:hover {
+      background: var(--brand);
+      color: var(--white);
+    }
+
+    .btn--white {
+      background: var(--white);
+      color: var(--brand-deep);
+    }
+    .btn--white:hover {
+      background: var(--cream);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    /* ── NAVIGATION ──────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      transition: background 0.35s var(--ease), box-shadow 0.35s var(--ease);
+    }
+    .nav--scrolled {
+      background: rgba(250,249,246,0.97);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 rgba(10,43,60,0.08);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 74px;
+      gap: var(--space-4);
+    }
+    .nav__logo { flex-shrink: 0; display: flex; align-items: center; }
+    .nav__logo img { height: 36px; width: auto; transition: opacity 0.3s; }
+    .nav__logo-white { display: none; }
+    .nav__logo-blue  { display: block; }
+    .nav:not(.nav--scrolled) .nav__logo-white { display: block; }
+    .nav:not(.nav--scrolled) .nav__logo-blue  { display: none; }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--white);
+      transition: color 0.25s;
+      letter-spacing: 0.01em;
+    }
+    .nav--scrolled .nav__links a { color: var(--text-muted); }
+    .nav__links a:hover,
+    .nav--scrolled .nav__links a:hover { color: var(--brand); }
+
+    .nav__cta-wrap { flex-shrink: 0; }
+
+    .nav__hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 4px;
+    }
+    .nav__hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--white);
+      transition: all 0.3s ease;
+    }
+    .nav--scrolled .nav__hamburger span { background: var(--text); }
+
+    .nav__mobile-menu {
+      display: none;
+      position: fixed;
+      top: 74px; left: 0; right: 0; bottom: 0;
+      background: var(--cream);
+      padding: var(--space-6) var(--gutter);
+      flex-direction: column;
+      gap: var(--space-4);
+      z-index: 99;
+      overflow-y: auto;
+    }
+    .nav__mobile-menu.is-open { display: flex; }
+    .nav__mobile-menu a {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 400;
+      color: var(--text);
+      border-bottom: 1px solid var(--surface-mid);
+      padding-bottom: var(--space-3);
+    }
+
+    /* ── HERO ────────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      background: var(--brand-deep);
+    }
+    .hero__main {
+      display: flex;
+      flex: 1;
+      align-items: stretch;
+      min-height: 92vh;
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px var(--space-8) var(--space-8) var(--gutter);
+      width: 52%;
+      max-width: 700px;
+    }
+    .hero__eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      margin-bottom: 1.75rem;
+    }
+    .hero__eyebrow .overline { color: var(--gold-light); }
+    .hero__eyebrow-line {
+      width: 32px; height: 2px;
+      background: var(--gold-light);
+      flex-shrink: 0;
+    }
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: var(--text-hero);
+      font-weight: 400;
+      line-height: 1.06;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 1.75rem;
+    }
+    .hero__headline em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--brand);
+      display: block;
+    }
+    .hero__tagline {
+      font-size: var(--text-lg);
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 1.25rem;
+    }
+    .hero__services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: var(--space-5);
+    }
+    .hero__service-pill {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.22);
+      color: rgba(255,255,255,0.7);
+    }
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-8);
+    }
+    .hero__proof-strip {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-top: var(--space-6);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      flex-wrap: wrap;
+    }
+    .hero__proof-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .hero__proof-num {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--brand);
+      line-height: 1;
+    }
+    .hero__proof-label {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.38);
+    }
+    .hero__proof-divider {
+      width: 1px; height: 34px;
+      background: rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+    .hero__image {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      flex: 1;
+    }
+    .hero__photo {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      min-height: 600px;
+    }
+    .hero__image::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 40%;
+      background: linear-gradient(to top, var(--brand-deep) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    /* Color strip accent */
+    .hero__color-bar {
+      display: flex;
+      height: 6px;
+    }
+    .hero__color-bar span {
+      flex: 1;
+    }
+    .hero__color-bar span:nth-child(1) { background: var(--brand); }
+    .hero__color-bar span:nth-child(2) { background: var(--gold); }
+    .hero__color-bar span:nth-child(3) { background: var(--coral); }
+    .hero__color-bar span:nth-child(4) { background: #4FC3A1; }
+    .hero__color-bar span:nth-child(5) { background: #7B5EA7; }
+
+    /* ── LOGO TICKER ─────────────────────────────────────────── */
+    .logo-ticker {
+      background: var(--white);
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--surface-mid);
+    }
+    .logo-ticker__inner {
+      display: flex;
+      align-items: center;
+      gap: var(--space-6);
+    }
+    .logo-ticker__label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(10,43,60,0.38);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .logo-ticker__overflow {
+      overflow: hidden;
+      flex: 1;
+    }
+    .logo-ticker__track {
+      display: inline-flex;
+      align-items: center;
+      gap: 2.5rem;
+      width: max-content;
+      animation: ticker 30s linear infinite;
+    }
+    .logo-ticker__item {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+    }
+    .logo-ticker__item img {
+      max-height: 100%;
+      max-width: 140px;
+      width: auto;
+      filter: grayscale(1) brightness(0.45) contrast(1.1);
+      opacity: 0.75;
+      transition: opacity 0.2s, filter 0.2s;
+    }
+    .logo-ticker__item img:hover {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+
+    /* ── VIDEO SECTION ───────────────────────────────────────── */
+    .video-section {
+      background: var(--brand-deep);
+      padding: var(--space-16) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .video-section::before {
+      content: '';
+      position: absolute;
+      top: -40%; left: -10%;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(21,144,188,0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .video-section__inner {
+      display: grid;
+      grid-template-columns: 1fr 1.8fr;
+      gap: var(--space-12);
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .video-section__copy h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin: var(--space-2) 0 var(--space-4);
+    }
+    .video-section__copy p {
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: var(--space-5);
+    }
+    .video-embed-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+    }
+    .video-embed-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    /* Placeholder when no iframe */
+    .video-placeholder {
+      position: relative;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+      background: #0D1F2B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .video-placeholder img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0.55;
+    }
+    .video-placeholder__play {
+      position: relative;
+      z-index: 2;
+      width: 80px; height: 80px;
+      background: var(--brand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s, background 0.25s;
+    }
+    .video-placeholder:hover .video-placeholder__play {
+      transform: scale(1.1);
+      background: var(--gold);
+    }
+    .video-placeholder__play svg {
+      fill: white;
+      margin-left: 4px;
+    }
+    .video-placeholder__label {
+      position: absolute;
+      bottom: var(--space-4);
+      left: var(--space-4);
+      z-index: 2;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ── SPEAKING TOPICS ─────────────────────────────────────── */
+    .topics {
+      background: var(--cream);
+    }
+    .topics__head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+      align-items: end;
+      padding-bottom: var(--space-8);
+      border-bottom: 1px solid var(--surface-mid);
+      margin-bottom: var(--space-8);
+    }
+    .topics__head h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.15;
+      margin-top: var(--space-2);
+    }
+    .topics__head p {
+      font-size: var(--text-base);
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .topics__format-note {
+      margin-top: var(--space-3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .format-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 100px;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+    }
+    .format-badge--gold {
+      background: #FEF3D8;
+      color: #8A5500;
+    }
+    .format-badge--green {
+      background: #E4F5EE;
+      color: #1A6640;
+    }
+
+    .topics__list { display: flex; flex-direction: column; }
+
+    .topic-row {
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      align-items: start;
+      gap: var(--space-5);
+      padding: var(--space-5) 0;
+      border-bottom: 1px solid var(--surface-mid);
+      cursor: pointer;
+      transition: all 0.25s var(--ease);
+    }
+    .topic-row--featured {
+      background: var(--brand-light);
+      border-bottom-color: var(--brand-mid);
+      padding: var(--space-5) var(--space-4);
+      border-radius: var(--radius);
+      margin-bottom: 0.5rem;
+      border-left: 3px solid var(--brand);
+    }
+    .topic-row:not(.topic-row--featured):hover {
+      background: var(--surface);
+      margin: 0 calc(-1 * var(--space-3));
+      padding-left: var(--space-3);
+      padding-right: var(--space-3);
+    }
+    .topic-row__num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--surface-mid);
+      line-height: 1;
+      font-style: italic;
+      font-weight: 300;
+      padding-top: 4px;
+      user-select: none;
+    }
+    .topic-row--featured .topic-row__num { color: var(--brand-mid); }
+    .topic-row__body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .topic-row__tag {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand);
+    }
+    .topic-row__body h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-h3);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .topic-row__desc {
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.65;
+      max-width: 560px;
+    }
+    .topic-row__formats {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .topic-row__arrow {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.2s;
+      margin-top: 4px;
+      color: var(--brand);
+    }
+    .topic-row--featured .topic-row__arrow { background: var(--white); }
+    .topic-row:hover .topic-row__arrow,
+    .topic-row--featured:hover .topic-row__arrow {
+      background: var(--brand);
+      color: var(--white);
+      transform: translateX(4px);
+    }
+
+    /* ── OUTCOMES BAND ───────────────────────────────────────── */
+    .outcomes-band {
+      position: relative;
+      overflow: hidden;
+      min-height: 540px;
+      display: flex;
+      align-items: center;
+      background: var(--brand-deep);
+    }
+    .outcomes-band__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg, rgba(10,43,60,0.97) 45%, rgba(10,43,60,0.65) 100%);
+      z-index: 1;
+    }
+    .outcomes-band__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://www.annegradygroup.com/wp-content/uploads/2023/09/anne-grady-keynote-speaker.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+    .outcomes-band__content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-12);
+      align-items: center;
+      padding: var(--space-16) 0;
+    }
+    .outcomes-band__left h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin: var(--space-2) 0 var(--space-4);
+    }
+    .outcomes-band__left p {
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.65);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: var(--space-5);
+    }
+    .outcomes-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      margin-bottom: var(--space-6);
+    }
+    .outcomes-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.8);
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .outcomes-list li::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--brand);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .outcomes-band__stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+    .outcomes-band__stat {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4) var(--space-4);
+      transition: background 0.25s;
+    }
+    .outcomes-band__stat:hover {
+      background: rgba(21,144,188,0.2);
+    }
+    .outcomes-band__stat-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--brand);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .outcomes-band__stat-label {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 6px;
+    }
+
+    /* ── BOOKS ───────────────────────────────────────────────── */
+    .books {
+      background: var(--surface);
+    }
+    .books__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    .books__head h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.15;
+      margin-top: var(--space-2);
+    }
+    .books__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-5);
+      align-items: end;
+    }
+    .book-item {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .book-item--featured .book-item__cover {
+      transform: scale(1.04);
+      box-shadow: 12px 20px 48px rgba(10,43,60,0.22);
+    }
+    .book-item__cover {
+      aspect-ratio: 2/3;
+      background: var(--surface-mid);
+      border-radius: 4px;
+      box-shadow: 6px 10px 28px rgba(10,43,60,0.14);
+      transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+      overflow: hidden;
+      position: relative;
+    }
+    .book-item__cover img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .book-item__badge {
+      position: absolute;
+      top: var(--space-2);
+      right: -8px;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.6rem 0.3rem 0.75rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 8% 50%);
+    }
+    .book-item:hover .book-item__cover {
+      transform: translateY(-8px) rotate(-0.4deg);
+      box-shadow: 12px 22px 48px rgba(10,43,60,0.22);
+    }
+    .book-item__title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .book-item__sub {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+    .book-item__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.375rem;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--brand);
+      transition: gap 0.2s;
+    }
+    .book-item__link:hover { gap: 0.625rem; }
+
+    /* ── DEEP DIVE PRODUCT ───────────────────────────────────── */
+    .deep-dive {
+      background: linear-gradient(135deg, #0A2B3C 0%, #0D4060 50%, #1590BC 100%);
+      padding: var(--space-16) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .deep-dive::before {
+      content: '';
+      position: absolute;
+      bottom: -10%; right: -5%;
+      width: 450px; height: 450px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .deep-dive__inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-12);
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .deep-dive__copy h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin: var(--space-2) 0 var(--space-4);
+    }
+    .deep-dive__copy h2 span {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+    .deep-dive__copy p {
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.65);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-bottom: var(--space-5);
+    }
+    .deep-dive__features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3);
+    }
+    .deep-dive__feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.8);
+      line-height: 1.5;
+    }
+    .deep-dive__feature-icon {
+      width: 28px; height: 28px;
+      background: rgba(21,144,188,0.3);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--brand);
+    }
+    .deep-dive__card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      backdrop-filter: blur(8px);
+    }
+    .deep-dive__card-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: var(--space-2);
+    }
+    .deep-dive__card-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: var(--space-4);
+    }
+    .deep-dive__card-title strong {
+      font-weight: 600;
+    }
+    .deep-dive__card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: var(--space-5);
+    }
+    .deep-dive__card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.625rem;
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.75);
+    }
+    .deep-dive__card ul li::before {
+      content: '✓';
+      color: var(--gold-light);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ── NEWSLETTER ──────────────────────────────────────────── */
+    .newsletter {
+      background: var(--brand);
+      padding: var(--space-12) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .newsletter::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -5%;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      pointer-events: none;
+    }
+    .newsletter__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .newsletter__copy h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin: var(--space-2) 0 var(--space-3);
+    }
+    .newsletter__copy p {
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.75);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .newsletter__form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .newsletter__input-row {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .newsletter__input {
+      flex: 1;
+      padding: 0.875rem 1.125rem;
+      border-radius: var(--radius);
+      border: none;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+      transition: background 0.2s;
+    }
+    .newsletter__input::placeholder { color: rgba(255,255,255,0.55); }
+    .newsletter__input:focus {
+      outline: none;
+      background: rgba(255,255,255,0.22);
+    }
+    .newsletter__disclaimer {
+      font-size: var(--text-xs);
+      color: rgba(255,255,255,0.55);
+    }
+    .newsletter__disclaimer a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: underline;
+    }
+
+    /* ── TESTIMONIALS ────────────────────────────────────────── */
+    .testimonials {
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .testimonials__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    .testimonials__head h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.15;
+      margin-top: var(--space-2);
+    }
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-5);
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      border: 1px solid var(--surface-mid);
+      transition: transform 0.25s, box-shadow 0.25s;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(10,43,60,0.1);
+    }
+    .testimonial-card--featured {
+      background: var(--brand-deep);
+      border-color: transparent;
+    }
+    .testimonial-card__quote {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .testimonial-card--featured .testimonial-card__quote {
+      color: var(--white);
+    }
+    .testimonial-card__stars {
+      display: flex;
+      gap: 3px;
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+    .testimonial-card__author {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .testimonial-card__name {
+      font-weight: 600;
+      font-size: var(--text-sm);
+      color: var(--text);
+    }
+    .testimonial-card--featured .testimonial-card__name { color: var(--white); }
+    .testimonial-card__role {
+      font-size: var(--text-xs);
+      color: var(--text-light);
+    }
+    .testimonial-card--featured .testimonial-card__role {
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── PRESS & MEDIA ───────────────────────────────────────── */
+    .press {
+      background: var(--surface);
+    }
+    .press__head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    .press__head h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.15;
+      margin-top: var(--space-2);
+    }
+    .press__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-4);
+    }
+    .press-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--surface-mid);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .press-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(10,43,60,0.12);
+    }
+    .press-card__img {
+      aspect-ratio: 16/9;
+      background: var(--surface);
+      overflow: hidden;
+    }
+    .press-card__img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s;
+    }
+    .press-card:hover .press-card__img img { transform: scale(1.04); }
+    .press-card__body {
+      padding: var(--space-4);
+    }
+    .press-card__source {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 0.5rem;
+    }
+    .press-card__title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* ── ABOUT / AUTHORITY ────────────────────────────────────── */
+    .authority { background: var(--cream); }
+    .authority__inner {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: var(--space-16);
+      align-items: center;
+    }
+    .authority__photo-wrap {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+    }
+    .authority__photo {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .authority__photo-wrap::before {
+      content: '';
+      position: absolute;
+      top: -8px; left: -8px;
+      width: 100px; height: 100px;
+      border-top: 4px solid var(--brand);
+      border-left: 4px solid var(--brand);
+      border-radius: 2px 0 0 0;
+      z-index: 1;
+    }
+    .authority__photo-wrap::after {
+      content: '';
+      position: absolute;
+      bottom: -8px; right: -8px;
+      width: 100px; height: 100px;
+      border-bottom: 4px solid var(--gold);
+      border-right: 4px solid var(--gold);
+      border-radius: 0 0 2px 0;
+      z-index: 1;
+    }
+    .authority__content h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-h2);
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.15;
+      margin: var(--space-2) 0 var(--space-4);
+    }
+    .authority__content p {
+      font-size: var(--text-base);
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-weight: 300;
+      margin-bottom: var(--space-3);
+    }
+    .authority__stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      padding: var(--space-5) 0;
+      border-top: 1px solid var(--surface-mid);
+      border-bottom: 1px solid var(--surface-mid);
+      margin: var(--space-5) 0;
+    }
+    .a-stat__num {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      font-weight: 400;
+      color: var(--brand);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .a-stat__label {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .authority__badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+    }
+    .authority__badge-label {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      width: 100%;
+    }
+    .wbenc-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--surface-mid);
+      border-radius: var(--radius);
+      padding: 0.75rem 1.25rem;
+    }
+    .wbenc-badge__icon {
+      width: 40px; height: 40px;
+      background: var(--brand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+    .wbenc-badge__text {
+      font-size: var(--text-xs);
+    }
+    .wbenc-badge__text strong {
+      display: block;
+      font-weight: 700;
+      color: var(--text);
+      font-size: var(--text-sm);
+    }
+    .wbenc-badge__text span {
+      color: var(--text-muted);
+    }
+
+    /* ── FINAL CTA ───────────────────────────────────────────── */
+    .cta-final {
+      background: var(--brand-deep);
+      padding: var(--space-16) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-final::before {
+      content: '';
+      position: absolute;
+      top: -30%; right: -5%;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(21,144,188,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-final__inner {
+      max-width: 700px;
+      position: relative;
+      z-index: 1;
+    }
+    .cta-final h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: var(--space-2) 0 var(--space-4);
+    }
+    .cta-final p {
+      font-size: var(--text-lg);
+      color: rgba(255,255,255,0.55);
+      font-weight: 300;
+      line-height: 1.65;
+      margin-bottom: var(--space-8);
+      max-width: 500px;
+    }
+    .cta-final__actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+    }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .footer {
+      background: #04090D;
+      padding: var(--space-12) 0 var(--space-4);
+    }
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: var(--space-8);
+      margin-bottom: var(--space-8);
+    }
+    .footer__brand p {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.38);
+      font-weight: 300;
+      line-height: 1.75;
+      margin-top: var(--space-3);
+    }
+    .footer__col h4 {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: var(--space-3);
+    }
+    .footer__col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+    .footer__col ul li a {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.55);
+      transition: color 0.2s;
+    }
+    .footer__col ul li a:hover { color: var(--brand); }
+    .footer__bottom {
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding-top: var(--space-4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+      flex-wrap: wrap;
+    }
+    .footer__bottom span {
+      font-size: var(--text-xs);
+      color: rgba(255,255,255,0.28);
+    }
+
+    /* ── MOBILE STICKY CTA ───────────────────────────────────── */
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--surface-mid);
+      padding: 0.875rem var(--gutter);
+      z-index: 98;
+      justify-content: center;
+    }
+    .mobile-sticky-cta .btn { width: 100%; justify-content: center; }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .nav__links { display: none; }
+      .nav__cta-wrap { display: none; }
+      .nav__hamburger { display: flex; }
+
+      .books__grid { grid-template-columns: repeat(2, 1fr); }
+      .press__grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials__grid { grid-template-columns: 1fr 1fr; }
+      .testimonials__grid .testimonial-card:last-child { display: none; }
+
+      .video-section__inner { grid-template-columns: 1fr; }
+      .video-section__copy { max-width: 600px; }
+      .deep-dive__inner { grid-template-columns: 1fr; }
+      .newsletter__inner { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex; }
+      body { padding-bottom: 72px; }
+
+      .hero__main { flex-direction: column; }
+      .hero__content {
+        width: 100%;
+        max-width: 100%;
+        padding: 96px var(--gutter) var(--space-6);
+      }
+      .hero__image {
+        height: 65vw;
+        max-height: 440px;
+      }
+      .hero__image::after { height: 25%; }
+
+      .topics__head { grid-template-columns: 1fr; }
+      .topic-row { grid-template-columns: 44px 1fr; }
+      .topic-row__arrow { display: none; }
+
+      .outcomes-band__content { grid-template-columns: 1fr; }
+      .outcomes-band__stats { grid-template-columns: 1fr 1fr; }
+
+      .authority__inner { grid-template-columns: 1fr; }
+      .authority__photo-wrap { max-width: 380px; margin: 0 auto; aspect-ratio: 4/3; }
+
+      .footer__inner { grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+
+      .books__grid { grid-template-columns: repeat(2, 1fr); }
+      .press__grid { grid-template-columns: 1fr 1fr; }
+      .testimonials__grid { grid-template-columns: 1fr; }
+      .testimonials__grid .testimonial-card:last-child { display: flex; }
+      .testimonials__grid .testimonial-card:nth-child(n+3) { display: none; }
+
+      .newsletter__input-row { flex-direction: column; }
+    }
+
+    @media (max-width: 480px) {
+      .books__grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+      .press__grid { grid-template-columns: 1fr; }
+      .footer__inner { grid-template-columns: 1fr; }
+      .hero__proof-strip { gap: 1.25rem; }
+      .cta-final__actions { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+   NAVIGATION
+═══════════════════════════════════════════════════════ -->
+<nav class="nav" id="mainNav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav__inner">
+
+      <a href="/" class="nav__logo" aria-label="Anne Grady Group — Home">
+        <!-- White logo: shown on transparent nav -->
+        <img class="nav__logo-white"
+          src="https://www.annegradygroup.com/wp-content/uploads/2021/03/anne-grady-group-logo-white.png"
+          alt="Anne Grady Group" width="160" height="35"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+        <!-- Blue logo: shown on scrolled nav -->
+        <img class="nav__logo-blue"
+          src="https://www.annegradygroup.com/wp-content/uploads/2021/03/anne-grady-group-logo.png"
+          alt="Anne Grady Group" width="160" height="35"
+          onerror="this.outerHTML='<span style=\'font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:var(--brand)\'>Anne Grady Group</span>'">
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="/speaking">Speaking Topics</a></li>
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/books">Books</a></li>
+        <li><a href="/about">About Anne</a></li>
+        <li><a href="/press">Press</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+
+      <div class="nav__cta-wrap">
+        <a href="/contact" class="btn btn--brand">
+          Book Anne
+          <svg class="btn__arrow" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="/speaking">Speaking Topics</a>
+  <a href="/programs">Programs</a>
+  <a href="/books">Books</a>
+  <a href="/about">About Anne</a>
+  <a href="/press">Press</a>
+  <a href="/blog">Blog</a>
+  <a href="/contact" style="color:var(--brand);">Book Anne →</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   HERO
+═══════════════════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-headline">
+  <div class="hero__color-bar" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero__main">
+    <div class="hero__content">
+      <div class="hero__eyebrow fade-up">
+        <div class="hero__eyebrow-line" aria-hidden="true"></div>
+        <span class="overline" style="color:var(--gold-light);">Keynote Speaker · Author · Leadership Expert</span>
+      </div>
+
+      <h1 class="hero__headline fade-up" id="hero-headline">
+        Adapt.
+        <em>Lead.</em>
+        Grow Forward.
+      </h1>
+
+      <p class="hero__tagline fade-up">
+        Help your teams adapt faster, recover stronger,
+        and grow through change.
+      </p>
+
+      <div class="hero__services fade-up">
+        <span class="hero__service-pill">Keynotes</span>
+        <span class="hero__service-pill">Workshops</span>
+        <span class="hero__service-pill">Leadership Development</span>
+        <span class="hero__service-pill">Virtual Programs</span>
+      </div>
+
+      <div class="hero__actions fade-up">
+        <a href="/contact" class="btn btn--brand">
+          Book Anne
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="/programs" class="btn btn--outline-white">View Programs</a>
+      </div>
+
+      <div class="hero__proof-strip fade-up">
+        <div class="hero__proof-item">
+          <div class="hero__proof-num">5,000+</div>
+          <div class="hero__proof-label">Events delivered</div>
+        </div>
+        <div class="hero__proof-divider" aria-hidden="true"></div>
+        <div class="hero__proof-item">
+          <div class="hero__proof-num">98%</div>
+          <div class="hero__proof-label">Outstanding rating</div>
+        </div>
+        <div class="hero__proof-divider" aria-hidden="true"></div>
+        <div class="hero__proof-item">
+          <div class="hero__proof-num">20+</div>
+          <div class="hero__proof-label">Years experience</div>
+        </div>
+        <div class="hero__proof-divider" aria-hidden="true"></div>
+        <div class="hero__proof-item">
+          <div class="hero__proof-num">4</div>
+          <div class="hero__proof-label">Bestselling books</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__image" aria-hidden="true">
+      <img class="hero__photo"
+        src="https://www.annegradygroup.com/wp-content/uploads/2024/01/anne-grady-keynote-speaker-hero.jpg"
+        alt="Anne Grady on stage delivering a keynote"
+        onerror="this.src='https://www.annegradygroup.com/wp-content/uploads/2023/09/anne-grady-keynote-speaker.jpg'">
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   LOGO TICKER
+═══════════════════════════════════════════════════════ -->
+<div class="logo-ticker" aria-label="Trusted by leading organizations">
+  <div class="container">
+    <div class="logo-ticker__inner">
+      <span class="logo-ticker__label">Trusted by</span>
+      <div class="logo-ticker__overflow">
+        <div class="logo-ticker__track" aria-hidden="true">
+          <!-- Set 1 -->
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/dell-technologies-logo.png" alt="Dell Technologies" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Dell Technologies</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/marriott-logo.png" alt="Marriott" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Marriott</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/t-mobile-logo.png" alt="T-Mobile" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>T-Mobile</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/nasa-logo.png" alt="NASA" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>NASA</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/southwest-airlines-logo.png" alt="Southwest Airlines" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Southwest Airlines</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/kpmg-logo.png" alt="KPMG" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>KPMG</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/accenture-logo.png" alt="Accenture" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Accenture</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/cisco-logo.png" alt="Cisco" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Cisco</span>'"></div>
+          <!-- Set 2 (duplicate for seamless loop) -->
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/dell-technologies-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Dell Technologies</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/marriott-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Marriott</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/t-mobile-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>T-Mobile</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/nasa-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>NASA</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/southwest-airlines-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Southwest Airlines</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/kpmg-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>KPMG</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/accenture-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Accenture</span>'"></div>
+          <div class="logo-ticker__item"><img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/cisco-logo.png" alt="" aria-hidden="true" onerror="this.closest('.logo-ticker__item').innerHTML='<span style=\'font-size:0.8rem;font-weight:700;color:#888;white-space:nowrap\'>Cisco</span>'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   VIDEO SECTION — just below fold (per Jay's priority)
+═══════════════════════════════════════════════════════ -->
+<section class="video-section" aria-labelledby="video-heading">
+  <div class="container">
+    <div class="video-section__inner">
+      <div class="video-section__copy">
+        <span class="overline" style="color:var(--brand);">See Anne in Action</span>
+        <h2 id="video-heading">What it feels like to have Anne on your stage</h2>
+        <p>
+          Anne doesn't deliver motivational speeches with a 48-hour shelf life.
+          She creates experiences audiences talk about for years — grounded in neuroscience,
+          delivered with humor and heart.
+        </p>
+        <p>
+          When your team walks out, they have a personal resilience framework
+          they can use the very next morning.
+        </p>
+        <a href="/contact" class="btn btn--brand">
+          Check Availability
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div>
+        <!-- Vimeo embed — replace VIDEO_ID with actual ID -->
+        <div class="video-embed-wrap">
+          <iframe
+            src="https://player.vimeo.com/video/894765432?h=0&badge=0&autopause=0&player_id=0&app_id=58479&color=1590BC"
+            allow="autoplay; fullscreen; picture-in-picture"
+            title="Anne Grady — Keynote Demo Reel"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   SPEAKING TOPICS / PROGRAMS
+═══════════════════════════════════════════════════════ -->
+<section class="topics section" aria-labelledby="topics-heading">
+  <div class="container">
+    <div class="topics__head">
+      <div>
+        <span class="overline">Keynotes &amp; Training</span>
+        <h2 id="topics-heading">Programs built for how real teams work</h2>
+      </div>
+      <div>
+        <p>
+          When your team is struggling with change, uncertainty, or burnout, they
+          don't need inspiration that fades by Monday. They need tools that stick.
+          Every program is available as a keynote, workshop, or multi-session training.
+        </p>
+        <div class="topics__format-note">
+          <span class="format-badge">Keynote</span>
+          <span class="format-badge--gold format-badge">Workshop</span>
+          <span class="format-badge--green format-badge">Virtual</span>
+          <span class="format-badge">Breakout Session</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="topics__list" role="list">
+
+      <!-- KEYNOTE 1 — Featured -->
+      <article class="topic-row topic-row--featured fade-up" role="listitem">
+        <div class="topic-row__num" aria-hidden="true">01</div>
+        <div class="topic-row__body">
+          <span class="topic-row__tag">Signature Keynote</span>
+          <h3>Resilience Reset</h3>
+          <p class="topic-row__desc">
+            Anne's flagship keynote on building the mental and emotional resilience that
+            lets people perform at their best — even when everything around them is changing.
+            Grounded in neuroscience. Delivered with heart, humor, and hard-won wisdom.
+          </p>
+          <div class="topic-row__formats">
+            <span class="format-badge">Keynote</span>
+            <span class="format-badge--gold format-badge">Workshop</span>
+            <span class="format-badge--green format-badge">Virtual</span>
+          </div>
+        </div>
+        <a href="/speaking/resilience-reset" class="topic-row__arrow" aria-label="Learn about Resilience Reset">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <!-- KEYNOTE 2 — Featured -->
+      <article class="topic-row topic-row--featured fade-up" role="listitem">
+        <div class="topic-row__num" aria-hidden="true">02</div>
+        <div class="topic-row__body">
+          <span class="topic-row__tag">Signature Keynote</span>
+          <h3>Evolvability: Leading Through Disruption</h3>
+          <p class="topic-row__desc">
+            In a world where change is constant and certainty is rare, evolvability is the
+            competitive advantage that separates thriving organizations from ones just surviving.
+            Practical strategies for staying agile when the rules keep changing.
+          </p>
+          <div class="topic-row__formats">
+            <span class="format-badge">Keynote</span>
+            <span class="format-badge--gold format-badge">Workshop</span>
+            <span class="format-badge--green format-badge">Virtual</span>
+          </div>
+        </div>
+        <a href="/speaking/evolvability" class="topic-row__arrow" aria-label="Learn about Evolvability">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <!-- Additional programs -->
+      <article class="topic-row fade-up" role="listitem">
+        <div class="topic-row__num" aria-hidden="true">03</div>
+        <div class="topic-row__body">
+          <span class="topic-row__tag">Leadership Development</span>
+          <h3>Building Resilient Leaders</h3>
+          <p class="topic-row__desc">
+            Equip your leaders with the mindset and tools to guide teams through uncertainty
+            without burning out — themselves or the people around them.
+          </p>
+          <div class="topic-row__formats">
+            <span class="format-badge--gold format-badge">Workshop</span>
+            <span class="format-badge">Breakout Session</span>
+            <span class="format-badge--green format-badge">Virtual</span>
+          </div>
+        </div>
+        <a href="/speaking/building-resilient-leaders" class="topic-row__arrow" aria-label="Learn about Building Resilient Leaders">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="topic-row fade-up" role="listitem">
+        <div class="topic-row__num" aria-hidden="true">04</div>
+        <div class="topic-row__body">
+          <span class="topic-row__tag">Team Culture</span>
+          <h3>Growth Mindset in Action</h3>
+          <p class="topic-row__desc">
+            Move beyond buzzwords. This program embeds growth mindset into daily team behavior —
+            creating cultures where challenge is embraced and learning drives performance.
+          </p>
+          <div class="topic-row__formats">
+            <span class="format-badge">Keynote</span>
+            <span class="format-badge--gold format-badge">Workshop</span>
+          </div>
+        </div>
+        <a href="/speaking/growth-mindset" class="topic-row__arrow" aria-label="Learn about Growth Mindset in Action">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <article class="topic-row fade-up" role="listitem">
+        <div class="topic-row__num" aria-hidden="true">05</div>
+        <div class="topic-row__body">
+          <span class="topic-row__tag">Wellbeing &amp; Performance</span>
+          <h3>Balancing Competing Priorities</h3>
+          <p class="topic-row__desc">
+            Evidence-based tools to help high-performers sustain output without sacrificing
+            wellbeing — practical frameworks that work in the real world, not just on slides.
+          </p>
+          <div class="topic-row__formats">
+            <span class="format-badge--gold format-badge">Workshop</span>
+            <span class="format-badge">Breakout Session</span>
+            <span class="format-badge--green format-badge">Virtual</span>
+          </div>
+        </div>
+        <a href="/speaking/balancing-competing-priorities" class="topic-row__arrow" aria-label="Learn about Balancing Competing Priorities">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+    </div>
+
+    <div style="margin-top: var(--space-8); text-align: center;">
+      <a href="/programs" class="btn btn--outline">
+        View all programs
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   OUTCOMES BAND
+═══════════════════════════════════════════════════════ -->
+<section class="outcomes-band" aria-labelledby="outcomes-heading">
+  <div class="outcomes-band__bg" role="presentation"></div>
+  <div class="outcomes-band__overlay" aria-hidden="true"></div>
+  <div class="container outcomes-band__content">
+    <div class="outcomes-band__left">
+      <span class="overline" style="color:var(--brand);">For Meeting Planners &amp; Event Teams</span>
+      <h2 id="outcomes-heading">What your audience walks away with</h2>
+      <p>
+        Anne's programs aren't motivational speeches with a 48-hour shelf life.
+        They're built around neuroscience and behavioral change — so the tools stick
+        long after the applause ends.
+      </p>
+      <ul class="outcomes-list">
+        <li>A personal resilience framework they can use the next morning</li>
+        <li>Neuroscience-backed strategies for managing stress under pressure</li>
+        <li>Practical tools for leading through uncertainty without burning out</li>
+        <li>A shared language teams use to support each other through change</li>
+        <li>Measurable mindset shifts — trackable via post-event assessments</li>
+      </ul>
+      <a href="/for-meeting-planners" class="btn btn--brand">
+        Meeting Planner Resources
+        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="outcomes-band__stats" role="list" aria-label="Program impact statistics">
+      <div class="outcomes-band__stat" role="listitem">
+        <div class="outcomes-band__stat-num">5,000+</div>
+        <div class="outcomes-band__stat-label">Events delivered</div>
+      </div>
+      <div class="outcomes-band__stat" role="listitem">
+        <div class="outcomes-band__stat-num">98%</div>
+        <div class="outcomes-band__stat-label">Outstanding rating</div>
+      </div>
+      <div class="outcomes-band__stat" role="listitem">
+        <div class="outcomes-band__stat-num">20+</div>
+        <div class="outcomes-band__stat-label">Years experience</div>
+      </div>
+      <div class="outcomes-band__stat" role="listitem">
+        <div class="outcomes-band__stat-num">4</div>
+        <div class="outcomes-band__stat-label">Bestselling books</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   BOOKS — 4 books (updated from 3)
+═══════════════════════════════════════════════════════ -->
+<section class="books section" aria-labelledby="books-heading">
+  <div class="container">
+    <div class="books__head">
+      <div>
+        <span class="overline">4 Bestselling Books</span>
+        <h2 id="books-heading">Anne's work, on the page</h2>
+      </div>
+      <a href="/books" class="btn btn--outline">Browse all books →</a>
+    </div>
+
+    <div class="books__grid">
+
+      <div class="book-item book-item--featured fade-up">
+        <div class="book-item__cover">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2024/01/evolvability-book-cover.jpg"
+            alt="Evolvability by Anne Grady"
+            onerror="this.style.display='none'; this.parentElement.style.background='#1590BC'">
+          <span class="book-item__badge">Newest</span>
+        </div>
+        <div class="book-item__title">Evolvability</div>
+        <div class="book-item__sub">How to Thrive in a World of Relentless Change</div>
+        <a href="/books/evolvability" class="book-item__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="book-item fade-up">
+        <div class="book-item__cover">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/mind-over-moment-book-cover.jpg"
+            alt="Mind Over Moment by Anne Grady"
+            onerror="this.style.display='none'; this.parentElement.style.background='#0D6A8F'">
+        </div>
+        <div class="book-item__title">Mind Over Moment</div>
+        <div class="book-item__sub">Harness the Power of Mindfulness</div>
+        <a href="/books/mind-over-moment" class="book-item__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="book-item fade-up">
+        <div class="book-item__cover">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/strong-enough-book-cover.jpg"
+            alt="Strong Enough by Anne Grady"
+            onerror="this.style.display='none'; this.parentElement.style.background='#E8A020'">
+        </div>
+        <div class="book-item__title">Strong Enough</div>
+        <div class="book-item__sub">Choosing Courage, Resilience and Triumph</div>
+        <a href="/books/strong-enough" class="book-item__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="book-item fade-up">
+        <div class="book-item__cover">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/52-strategies-book-cover.jpg"
+            alt="52 Strategies for Life, Love and Work by Anne Grady"
+            onerror="this.style.display='none'; this.parentElement.style.background='#4FC3A1'">
+        </div>
+        <div class="book-item__title">52 Strategies for Life, Love &amp; Work</div>
+        <div class="book-item__sub">Transforming Your Life One Week at a Time</div>
+        <a href="/books/52-strategies" class="book-item__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   RESILIENCE RESET DEEP DIVE — Online Course Product
+═══════════════════════════════════════════════════════ -->
+<section class="deep-dive" aria-labelledby="deepdive-heading">
+  <div class="container">
+    <div class="deep-dive__inner">
+      <div class="deep-dive__copy">
+        <span class="overline" style="color:var(--gold-light);">Online Course</span>
+        <h2 id="deepdive-heading">
+          The <span>Resilience Reset</span><br>Deep Dive
+        </h2>
+        <p>
+          Can't bring Anne in person? The Resilience Reset Deep Dive brings the full keynote
+          experience online — 10 video modules packed with the same research, tools, and
+          frameworks that Fortune 500 audiences rave about.
+        </p>
+        <p>
+          Available for individual enrollment, team licensing, or as an add-on to a live keynote.
+        </p>
+        <div class="deep-dive__features">
+          <div class="deep-dive__feature">
+            <div class="deep-dive__feature-icon">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            10 on-demand video modules
+          </div>
+          <div class="deep-dive__feature">
+            <div class="deep-dive__feature-icon">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            Downloadable PDF workbooks
+          </div>
+          <div class="deep-dive__feature">
+            <div class="deep-dive__feature-icon">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            Lifetime access
+          </div>
+          <div class="deep-dive__feature">
+            <div class="deep-dive__feature-icon">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            Bulk team licensing available
+          </div>
+        </div>
+        <div style="margin-top: var(--space-6); display:flex; gap: 1rem; flex-wrap:wrap;">
+          <a href="/resilience-reset-deep-dive" class="btn btn--gold">
+            Explore the Course
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/contact" class="btn btn--outline-white">Ask about team licensing</a>
+        </div>
+      </div>
+
+      <div class="deep-dive__card">
+        <div class="deep-dive__card-label">What's inside</div>
+        <div class="deep-dive__card-title">
+          Resilience Reset<br>
+          <strong>Deep Dive</strong>
+        </div>
+        <ul>
+          <li>Understanding your brain under stress</li>
+          <li>Building your personal resilience framework</li>
+          <li>Rewiring negative thought patterns</li>
+          <li>Tools for managing uncertainty</li>
+          <li>Creating sustainable momentum in your team</li>
+          <li>Leading with empathy under pressure</li>
+          <li>Post-module reflection exercises</li>
+          <li>Implementation guide for team leaders</li>
+        </ul>
+        <a href="/resilience-reset-deep-dive" class="btn btn--white" style="width:100%; justify-content:center;">
+          Get instant access →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   NEWSLETTER SIGNUP — always on homepage, per Jay
+═══════════════════════════════════════════════════════ -->
+<section class="newsletter" aria-labelledby="newsletter-heading" id="newsletter">
+  <div class="container">
+    <div class="newsletter__inner">
+      <div class="newsletter__copy">
+        <span class="overline" style="color:rgba(255,255,255,0.6);">Weekly Resilience Insights</span>
+        <h2 id="newsletter-heading">Get Strong. Stay Strong.</h2>
+        <p>
+          Join thousands of leaders who start their week with Anne's practical insights
+          on resilience, leadership, and navigating change — delivered straight to your inbox.
+        </p>
+        <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.55); margin-top: 0.5rem;">
+          Also available at <strong style="color:rgba(255,255,255,0.75);">annegradygroup.com/strong</strong>
+        </p>
+      </div>
+
+      <div class="newsletter__form" role="form" aria-label="Newsletter signup">
+        <div class="newsletter__input-row">
+          <input type="text" class="newsletter__input" placeholder="First name" aria-label="First name">
+          <input type="email" class="newsletter__input" placeholder="Email address" aria-label="Email address">
+        </div>
+        <button type="button" class="btn btn--white" style="align-self:flex-start;">
+          Subscribe — it's free
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <p class="newsletter__disclaimer">
+          No spam. Unsubscribe anytime.
+          See our <a href="/privacy">privacy policy</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   TESTIMONIALS
+═══════════════════════════════════════════════════════ -->
+<section class="testimonials section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="testimonials__head">
+      <div>
+        <span class="overline">What people say</span>
+        <h2 id="testimonials-heading">Words from the people who matter</h2>
+      </div>
+    </div>
+
+    <div class="testimonials__grid">
+
+      <div class="testimonial-card testimonial-card--featured fade-up">
+        <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote">
+          "Anne was by far the best keynote speaker we've had in 15 years of conferences.
+          Our team is still talking about her frameworks three months later."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__name">Sarah M.</div>
+          <div class="testimonial-card__role">VP People Operations, Fortune 500 Technology Company</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote">
+          "Our leaders came in burned out and overwhelmed. Anne gave them real tools, not just
+          inspiration. The difference in our culture was visible within weeks."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__name">David K.</div>
+          <div class="testimonial-card__role">Chief Human Resources Officer, Healthcare System</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="testimonial-card__quote">
+          "Anne has a rare gift — she makes you laugh, makes you cry, and then hands you a
+          toolkit you can actually use on Monday morning. Extraordinary."
+        </blockquote>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__name">Renee T.</div>
+          <div class="testimonial-card__role">Executive Director, National Association Annual Conference</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   PRESS & MEDIA — trust builders + domain authority
+═══════════════════════════════════════════════════════ -->
+<section class="press section--md" aria-labelledby="press-heading">
+  <div class="container">
+    <div class="press__head">
+      <div>
+        <span class="overline">Press &amp; Media</span>
+        <h2 id="press-heading">Anne in the news</h2>
+      </div>
+      <a href="/press" class="btn btn--outline">View all press →</a>
+    </div>
+
+    <div class="press__grid">
+      <a href="/press" class="press-card">
+        <div class="press-card__img">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2024/01/press-hbr.jpg"
+            alt="Harvard Business Review feature"
+            onerror="this.parentElement.style.background='#1590BC'">
+        </div>
+        <div class="press-card__body">
+          <div class="press-card__source">Harvard Business Review</div>
+          <div class="press-card__title">Why Resilience Training Works — and When It Doesn't</div>
+        </div>
+      </a>
+
+      <a href="/press" class="press-card">
+        <div class="press-card__img">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2024/01/press-success-mag.jpg"
+            alt="Success Magazine feature"
+            onerror="this.parentElement.style.background='#E8A020'">
+        </div>
+        <div class="press-card__body">
+          <div class="press-card__source">Success Magazine</div>
+          <div class="press-card__title">Anne Grady on Choosing Courage Over Comfort</div>
+        </div>
+      </a>
+
+      <a href="/press" class="press-card">
+        <div class="press-card__img">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2024/01/press-podcast.jpg"
+            alt="Podcast interview"
+            onerror="this.parentElement.style.background='#4FC3A1'">
+        </div>
+        <div class="press-card__body">
+          <div class="press-card__source">The Tim Ferriss Show</div>
+          <div class="press-card__title">Building Resilience When It Matters Most</div>
+        </div>
+      </a>
+
+      <a href="/press" class="press-card">
+        <div class="press-card__img">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2024/01/press-forbes.jpg"
+            alt="Forbes feature"
+            onerror="this.parentElement.style.background='#7B5EA7'">
+        </div>
+        <div class="press-card__body">
+          <div class="press-card__source">Forbes</div>
+          <div class="press-card__title">The Science Behind Leading Resilient Teams</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   ABOUT / AUTHORITY
+═══════════════════════════════════════════════════════ -->
+<section class="authority section" aria-labelledby="authority-heading">
+  <div class="container">
+    <div class="authority__inner">
+
+      <div class="authority__photo-wrap">
+        <img class="authority__photo"
+          src="https://www.annegradygroup.com/wp-content/uploads/2024/01/anne-grady-speaker-headshot.jpg"
+          alt="Anne Grady"
+          onerror="this.src='https://www.annegradygroup.com/wp-content/uploads/2021/03/anne-grady-headshot.jpg'">
+      </div>
+
+      <div class="authority__content">
+        <span class="overline">About Anne Grady</span>
+        <h2 id="authority-heading">She's not just a speaker. She's been in the trenches.</h2>
+        <p>
+          Anne Grady is a best-selling author, award-winning speaker, and resilience expert
+          who has spent more than 20 years helping the world's best organizations build
+          cultures where people actually thrive.
+        </p>
+        <p>
+          With a background in organizational communication and a personal story that
+          redefines resilience, Anne brings rare credibility to every stage. When she talks
+          about leading through adversity, she's not reading from a textbook.
+        </p>
+        <p>
+          Her clients include Dell Technologies, Marriott, NASA, T-Mobile, Southwest Airlines,
+          KPMG, and hundreds of associations, healthcare systems, and government agencies
+          across 45+ states and multiple countries.
+        </p>
+
+        <div class="authority__stats" role="list">
+          <div role="listitem">
+            <div class="a-stat__num">5,000+</div>
+            <div class="a-stat__label">Events delivered</div>
+          </div>
+          <div role="listitem">
+            <div class="a-stat__num">45+</div>
+            <div class="a-stat__label">States served</div>
+          </div>
+          <div role="listitem">
+            <div class="a-stat__num">20+</div>
+            <div class="a-stat__label">Years experience</div>
+          </div>
+        </div>
+
+        <div class="authority__badges">
+          <div class="authority__badge-label">Certifications &amp; Recognition</div>
+
+          <!-- WBENC Badge — per Jay, must be on homepage, business value for Fortune 500 procurement -->
+          <div class="wbenc-badge" title="Women's Business Enterprise National Council Certified">
+            <div class="wbenc-badge__icon">WBENC</div>
+            <div class="wbenc-badge__text">
+              <strong>WBENC Certified</strong>
+              <span>Women-Owned Business Enterprise</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: var(--space-6); display:flex; gap: 1rem; flex-wrap:wrap;">
+          <a href="/about" class="btn btn--brand">
+            Meet Anne
+            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/for-meeting-planners" class="btn btn--outline">Meeting Planner Resources</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   FINAL CTA
+═══════════════════════════════════════════════════════ -->
+<section class="cta-final" aria-labelledby="cta-final-heading">
+  <div class="container">
+    <div class="cta-final__inner">
+      <span class="overline" style="color:var(--brand);">Book Anne Grady</span>
+      <h2 id="cta-final-heading">Ready to build a team that doesn't just survive change — but leads it?</h2>
+      <p>
+        Tell us about your event, your audience, and what you're trying to accomplish.
+        We'll reach back out to explore how Anne can help.
+      </p>
+      <div class="cta-final__actions">
+        <a href="/contact" class="btn btn--brand">
+          Start the conversation
+          <svg class="btn__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="/programs" class="btn btn--outline-white">Explore programs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+   FOOTER
+═══════════════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="/" aria-label="Anne Grady Group Home">
+          <img src="https://www.annegradygroup.com/wp-content/uploads/2021/03/anne-grady-group-logo-white.png"
+            alt="Anne Grady Group" width="160" height="35"
+            onerror="this.outerHTML='<span style=\'font-family:var(--font-display);font-size:1rem;font-weight:600;color:white\'>Anne Grady Group</span>'">
+        </a>
+        <p>Keynote speaking, workshops, and leadership development that builds resilient teams and adaptive leaders.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Speaking</h4>
+        <ul>
+          <li><a href="/speaking/resilience-reset">Resilience Reset</a></li>
+          <li><a href="/speaking/evolvability">Evolvability</a></li>
+          <li><a href="/speaking/building-resilient-leaders">Building Resilient Leaders</a></li>
+          <li><a href="/programs">All Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about">About Anne</a></li>
+          <li><a href="/books">Books</a></li>
+          <li><a href="/press">Press &amp; Media</a></li>
+          <li><a href="/for-meeting-planners">For Meeting Planners</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Book Anne</h4>
+        <ul>
+          <li><a href="/contact">Speaker Inquiry</a></li>
+          <li><a href="/contact">Corporate Training</a></li>
+          <li><a href="/resilience-reset-deep-dive">Online Course</a></li>
+          <li><a href="mailto:info@annegradygroup.com">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2025 Anne Grady Group. All rights reserved. Women-Owned Business (WBENC Certified).</span>
+      <a href="/privacy" style="color:rgba(255,255,255,0.3); font-size:var(--text-xs); transition:color 0.2s;"
+        onmouseover="this.style.color='var(--brand)'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">
+        Privacy Policy
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Mobile sticky CTA -->
+<div class="mobile-sticky-cta" aria-label="Book Anne Grady" role="complementary">
+  <a href="/contact" class="btn btn--brand">Book Anne</a>
+</div>
+
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Hamburger toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu   = document.getElementById('mobileMenu');
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+    mobileMenu.setAttribute('aria-hidden', !isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      hamburgerBtn.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Scroll-triggered fade-up (IntersectionObserver)
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.animationPlayState = 'running';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  fadeEls.forEach(el => {
+    // Pause animation initially for scroll-triggered elements not in hero
+    if (!el.closest('.hero')) {
+      el.style.animationPlayState = 'paused';
+      io.observe(el);
+    }
+  });
+
+  // Topic row click → navigate
+  document.querySelectorAll('.topic-row').forEach(row => {
+    row.addEventListener('click', (e) => {
+      const link = row.querySelector('a[href]');
+      if (link && !e.target.closest('a')) {
+        window.location.href = link.href;
+      }
+    });
+    row.setAttribute('tabindex', '0');
+    row.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const link = row.querySelector('a[href]');
+        if (link) window.location.href = link.href;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
